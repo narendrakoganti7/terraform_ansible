@@ -9,7 +9,7 @@ resource "aws_instance" "ansible" {
     Name = "ansible"
   }
   provisioner "file" {
-   source = "C:/build_newaws/ansible_ec2_server//install_ansible.sh"
+   source = "install_ansible.sh"
     destination = "/tmp/install_ansible.sh"
   }
 
